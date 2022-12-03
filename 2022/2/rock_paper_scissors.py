@@ -1,7 +1,7 @@
-def outcome(move, opp_move):
-    if move == opp_move:
+def outcome(my_move, op_move):
+    if my_move == op_move:
         return 3  # draw
-    elif opp_move == (move + 1) % 3:
+    elif op_move == (my_move + 1) % 3:
         return 0  # loss
     else:
         return 6  # win 
