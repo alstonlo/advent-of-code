@@ -9,7 +9,7 @@ def analyze_tree_heights(path):
         for c, h in enumerate(row):
             all_views = all_views_from_tree(heights, r=r, c=c)
 
-            # Boarder tree
+            # Border tree
             if not all(view for view in all_views):
                 num_visible += 1
                 continue
