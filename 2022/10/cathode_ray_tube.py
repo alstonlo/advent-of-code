@@ -8,8 +8,7 @@ def sum_strength_and_draw_sprite(path):
     def update_strength_and_sprite():
         if cycle % 40 == 20:
             total_strength[0] += (cycle * X)
-        row = (cycle - 1) // 40
-        col = (cycle - 1) % 40
+        row, col = divmod(cycle - 1, 40)
         sprite[row][col] = "#" if (abs(col - X) <= 1) else "."
 
     with open(path, "r") as f:
