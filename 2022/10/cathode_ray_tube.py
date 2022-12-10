@@ -2,7 +2,7 @@ def sum_strength_and_draw_sprite(path):
     cycle = 1
     X = 1
 
-    total_strength = [0]  # In a list so we can mutate in nested function
+    total_strength = [0]  # in a list so we can mutate in nested function
     sprite = [["."] * 40 for _ in range(6)]
 
     def update_strength_and_sprite():
